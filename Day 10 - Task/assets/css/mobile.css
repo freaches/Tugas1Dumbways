@@ -1,0 +1,88 @@
+#bars-menu {
+    display: none;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+.menu-container {
+    display: none;
+}
+
+.menu-container a {
+    text-decoration: none;
+    background-color: darkgray;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+}
+
+.menu-container .home-button {
+    background-color: orangered;
+}
+
+@media only screen and (max-width : 900px) {
+    .container {
+        flex-direction: column;
+        margin : 10%;
+    }
+    .container-text {
+        width: 100%;
+    }
+
+    .text {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .project-detail .information {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-detail .information img {
+        width: 100%;
+    }
+
+    .project-detail .information .detail-information {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+@media only screen and (max-width : 750px) {
+    .project .projectBody .project-list .project-list-items {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .item-gone {
+        display: none;
+    }
+
+    #bars-menu {
+        display: block;
+    }
+    
+    .project .project-form {
+        margin: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-form {
+        width: 80%;
+    }
+}

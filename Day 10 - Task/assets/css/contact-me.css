@@ -1,0 +1,39 @@
+.container-form {
+    width: 35%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+textarea{
+    resize: none;
+    height: 25%;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form label { 
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 25px;
+    border:none;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-weight: 500;
+}

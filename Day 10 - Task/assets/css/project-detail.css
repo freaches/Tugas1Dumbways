@@ -1,0 +1,41 @@
+.project-detail {
+    border:1px ;
+    margin: 10%;
+    padding : 10%;
+    border-radius : 10px;
+    box-shadow : 0  0 10px gray;
+    background-color: white;
+    justify-content: center;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.project-detail .information img {
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.detail-information {
+    width: 40%; 
+}
+
+.technologies { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.isi {
+    font-size: medium;
+    text-align: justify;
+    margin-top: 30px;
+}

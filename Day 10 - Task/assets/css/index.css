@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    border: 1px;
+    margin: 10%;
+    padding : 5%;
+    border-radius : 10px;
+    box-shadow : 0  0   10px gray;
+    text-align: justify;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.container-text {
+    width: 45%;
+}
+
+.logo{
+    text-align: center;
+}
+
+button {
+    align-items: center;
+    cursor: pointer;
+    background-color: #000033;
+    color: white;
+    border-radius: 50px;
+    font-size: large;
+    padding: 2% 5%; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.card {
+    text-align: center;     
+    width: 45%; 
+    border-radius: 10px; 
+    box-shadow: 0 0 15px grey;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}

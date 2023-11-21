@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Project-1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/project.css" rel="stylesheet">
+        <link href="./assets/css/mobile.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="./assets/image/logo.png"/>
+                    <li>
+                        <a href="index.html" class="item-gone">Home</a>
+                    </li>
+                    <li>
+                        <a href="my-project.html" class="item-gone">My Project</a>
+                    </li>
+                    <li>
+                        <a href="testimonial.html" class="item-gone">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="./contact-me.html" class="item-gone">Contact me</a>
+            </div>
+
+            <div class="nav-right" id="bars-menu">
+                <button class="menu-button" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="menu-container" id="menu-container">
+            <a href="index.html" class="home-button">Home</a>
+            <a href="my-project.html">My Project</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+
+        <div class="project">
+            <div class="project-form">
+                <form onsubmit = "isiProject(event)">
+                    <h1 class="judul">Add My Project</h1>
+                    <div>
+                        <label for="my-project">My Project</label>
+                        <input type="text" id="my-project"/>
+                    </div>
+                    <div class="date">
+                        <div>
+                            <label for="awal">Start Date</label>
+                            <input type="date" id="awal"/>
+                        </div>
+                        <div>
+                            <label for="akhir">End Date</label>
+                            <input type="date" id="akhir"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                    <div>
+                        <label>Technologies</label>
+                        <div class="check-box">
+                            <div class="box">
+                                <input type="checkbox" id="node-js" value="Node Js">
+                                <label for="node-js"> Node Js</label><br>
+                                <input type="checkbox" id="react-js" value="React Js">
+                                <label for="react-js"> React Js</label>
+                            </div>
+                            <div class="box">
+                                <input type="checkbox" id="next-js" value="Next Js">
+                                <label for="next-js">  Next Js</label><br>
+                                <input type="checkbox" id="typeScript" value="TypeScript">
+                                <label for="typeScript">  TypeScript</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="input-blog-image-group">
+                            <label for="input-blog-image">
+                                <p>Attach File</p>
+                                <img src="assets/image/file.png" alt="file" />
+                            </label>
+                            <input type="file" id="input-blog-image" hidden />
+                         </div>
+                    </div>
+                    <button>Post Project</button>
+                
+                </form>
+                
+            </div>
+            
+            <div class="projectBody">
+                <h1 class="judul">My Project</h1>
+                <hr class="line"/>
+                <div class="project-list" id="contents">
+                    <div class="project-list-items">
+                        <img src="./assets/image/makanan.jpg" alt="makan"/>
+                        <h2><a href="my-project-detail.html" target="_blank">Makan Mukbang Kuy Apps</a></h1>
+                        <p style="font-size: 15px; color: grey;">Durasi : 1 Bulan</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Condimentum lacinia quis vel eros donec ac odio tempor. 
+                            Eget gravida cum sociis natoque penatibus et magnis dis parturient. 
+                            Interdum velit laoreet id donec ultrices tincidunt arcu non.
+                        </p>
+                        
+                        <i class="fa-brands fa-node-js"></i>    
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-vuejs"></i>
+                        <i class="fa-brands fa-js"></i> <br>
+                        <div class="edit">
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/project.js"></script>
+    <script src="assets/js/button.js"></script>
+</html>
